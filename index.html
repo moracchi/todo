@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoリスト</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesomeの読み込み -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ToDoリスト</h1>
+            <p>日々のタスクを管理しよう</p>
+        </header>
+        
+        <!-- タスク入力フォーム -->
+        <div class="task-form">
+            <input type="text" id="task-input" placeholder="新しいタスクを入力...">
+            <button id="add-task-btn">
+                <i class="fas fa-plus"></i> 追加
+            </button>
+        </div>
+
+        <!-- タスク一覧表示エリア -->
+        <div class="task-list-container">
+            <div class="task-stats">
+                <span id="task-count">残りのタスク: 0</span>
+                <button id="clear-completed-btn">完了したタスクを削除</button>
+            </div>
+            <ul id="task-list">
+                <!-- タスクはJavaScriptで動的に追加されます -->
+            </ul>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 ToDoリストアプリ</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
